@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	{% for i in result %}
+		id : {{i["id"]}}<br/>
+	    name: {{i["name"]}}<br/>
+	    pw: {{i["pass"]}}<br/>
+	    email:{{i["email"]}} <br/>
+	    phone:{{i["phone"]}}<br/>
+	    address1:{{i["address1"]}}<br/>
+	    reg_date:{{i["reg_date"]}}
+	 {% endfor %}
+	 {% for n in range(pgn)%}
+	   <a href="/member?pgn={{n}}"> {{n}} </a> 
+	  {% endfor %} 
+</body>
+</html>
